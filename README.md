@@ -1,22 +1,17 @@
-# CIS2520-F24-A2
-
-## Student Information 
 Name : Elise Pitre
 
-Student Number : 1267817
-
-## Assignment Overview
+## Overview
 q1:
-    Takes as input a fully parenthesized, arithmetic expression of binary operators +, −, *, /, and converts the expression into a binary expression
-    tree. The program takes input from the command line. The entire expression must be in a character string without any space in it.
-    An input string only includes floating numbers in the format of Y.YY, that is, one digit to the left of the decimal point and two digits to the right of the decimal point, and variables of the form of x1, x2, x3, ...
+    Converts a fully parenthesized arithmetic expression with binary operators (+, −, *, /) into a binary expression tree from a command-line input.
+
+    Input: A single-character string with floating numbers (Y.YY format) and variables (x1, x2, ...).
 
     The menu offers the user the following options:
-    1. Preorder (print expression in pre order)
-    2. Inorder (print expression in order)
-    3. Postorder (print expression in post order)
-    4. Calculate (prompts user to value of variables, if any, and calculates the value of the expression)
-    5. Exit (ends the program)
+    1. Preorder
+    2. Inorder
+    3. Postorder
+    4. Calculate
+    5. Exit
 
     Example test case:
         Expression '(((x1+5.12)*(x2-7.68))/x3)'
@@ -25,11 +20,13 @@ q1:
         Postorder Output: x1 5.12 + x2 7.68 - * x3 /
 
 q2:
-    Reads 200 2-digit integers from a text file “f.dat” and stores the integers in an array of 20 rows and 10 columns.
-    The program treats each row of the array as an object, with the sum of the first three integers being the key, and 
-    the other seven integers being the information content. The program then creates a MAX-HEAP with a node containing 
-    an object. An array representation of the heap is used, and the parental node downheap algorithm in the array 
-    representation in applied. The program finally displays the heap as a 20 ×10 array, a row for an object.
+    Reads 200 two-digit integers from f.dat, stores them in a 20x10 array, and treats each row as an object.
+
+    Process:
+    First 3 integers: Key
+    Remaining 7: Information
+    Creates a max-heap (array-based) using downheap algorithm.
+    Output: Heap displayed as a 20x10 array.
 
     Example test case:
         f.dat:
@@ -75,10 +72,3 @@ q2:
         68 37 41 12 06 85 51 85 60 56
         19 09 89 77 80 75 91 34 61 24
         99 30 00 91 26 09 91 70 21 14
-
-## Resources 
-- CIS2520 courselink slides
-- CIS2520 lab content
-
-## Implementation
-The assignment is complete.
